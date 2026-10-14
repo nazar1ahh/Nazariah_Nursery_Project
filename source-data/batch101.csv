@@ -1,4 +1,4 @@
-Time,Date,Room,PersonID,PersonType
+Time,Date,Room,PersonID,PersonType,Access
 5:12 PM,03/11/2026,10305,G4001,Parent
 5:13 PM,03/11/2026,10305,G4002,Parent
 5:24 PM,03/11/2026,10334,G4003,Parent
