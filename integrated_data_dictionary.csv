@@ -1,2 +1,17 @@
 field_name,data_type,description,source,missing_value_notes
-timestamp
+timestamp,datetime,"Combined date and time for the record, normalized to YYYY-MM-DD HH:MM:SS.",All sources,Can be blank? No
+date,string,"Date of the event or measurement, formatted MM/DD/YYYY.",All sources,Can be blank? No
+time,string,Time of the event or measurement.,All sources,Can be blank? No
+room_number,string,Room number associated with an access event or room environment reading. CSV room values are normalized by removing the leading 10 when present; patient vital records do not include a room.,batch101.csv; stream101.json,"Can be blank? Yes, for patient vitals"
+person_id,string,Identifier for the person in an access event or the patient in a vital-sign record.,batch101.csv; feed101.xml,"Can be blank? Yes, for room environment records"
+person_type,string,"Role of the person, such as Parent, Nurse, Doctor, or Patient.",batch101.csv; derived as Patient for feed101.xml,"Can be blank? Yes, for room environment records"
+access_status,string,Access status field from the CSV. It is blank in the supplied CSV rows.,batch101.csv,Can be blank? Yes
+room_temperature_f,numeric,Room temperature in degrees Fahrenheit.,stream101.json,"Can be blank? Yes, except room environment records"
+door_status,string,"Door state recorded for the room, such as open or closed.",stream101.json,"Can be blank? Yes, except room environment records"
+humidity,numeric,Humidity value from the room environment data. All supplied values are null.,stream101.json,Can be blank? Yes
+patient_special_condition,string,Special-condition field for the patient. Supplied values are “unknown”.,feed101.xml,Can be blank? Yes
+heart_rate_bpm,integer,Patient heart rate in beats per minute.,feed101.xml,"Can be blank? Yes, except patient vital records"
+breathing_rate_breaths_min,integer,Patient breathing rate in breaths per minute.,feed101.xml,"Can be blank? Yes, except patient vital records"
+patient_temperature_f,numeric,Patient temperature in degrees Fahrenheit. Kept separate from room temperature.,feed101.xml,"Can be blank? Yes, except patient vital records"
+source_file,string,Name of the original file that supplied the record.,All sources,Can be blank? No
+record_type,string,"Record category: access_event, room_environment, or patient_vitals.",Created during integration,Can be blank? No
