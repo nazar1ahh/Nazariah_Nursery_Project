@@ -1,1 +1,13 @@
+For this project, we were given different scenarios involving either a hospital nursery or a greenhouse. The datasets focus on monitoring activity within the nursery, including who enters the area, such as parents, nurses, and other individuals. The purpose of the project is to understand what information is being monitored and how the data can support the hospital’s security and protection system.
 
+
+The original data comes from a hospital nursery. Each file type provides different information. The CSV file contains information from an ID scanner that records the people entering the nursery. The JSON file provides updates about the room’s environment. The XML file contains information about the patients’ conditions, including their breathing, heart rate, and temperature. I combined the different files into one dataset using Excel, with some assistance from AI to help guide me through the process.
+
+
+The final integrated dataset combines information from all three file types into one table. It organizes the information in one place while keeping the different fields identifiable by their source files. This makes it easier to review the information
+
+
+The data dictionary identifies and explains the different field names in the integrated dataset. It also identifies the original source file for each field and specifies the data type associated with it.
+
+
+The biggest challenges I faced throughout this assignment were combining the different files into one integrated dataset and creating the README file. Making sure the information from each file was organized correctly took time, and writing the README required me to explain the purpose and structure of my project clearly.
