@@ -1,1 +1,0 @@
-timestamp, date,time, room_number, person_id, person_type, access_status, room_temperature_f, door_status, humidity, patient_special_condition, heart_rate_bpm, breathing_rate_breaths_min, patient_temperature_f, source_file, record_type
