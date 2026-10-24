@@ -1,0 +1,22 @@
+Data Dictionary (Source Fields),,,
+,,,
+,,,
+Field name,Source file,Data type,Description
+Time,CSV,Time,Time the person entered the room
+Date,CSV,Date,Date of the entry
+Room,CSV,Integer,Room the person accessed
+PersonID,CSV,String,Unique ID of the person; first letter indicates type
+PersonType,CSV,Category,Role of the person
+Access,CSV,Empty,Column with no data in any row
+dateTime,JSON,Datetime,Date and time of the reading
+roomNumber,JSON,Integer,Room being measured
+roomTempF,JSON,Float,Room air temperature
+doorStatus,JSON,Category,Whether the room door was open or closed
+humidity,JSON,Null,Relative humidity; never recorded
+date,XML,Date,Date of the reading
+time,XML,Time,Time of the reading
+patientId,XML,String,Patient the reading belongs to
+hasSpecialCondition,XML,Null,Whether the patient has a special condition
+heartRate,XML,Integer,Patient heart rate
+breathingRate,XML,Integer,Patient breathing rate
+temperature,XML,Float,Patient body temperature
